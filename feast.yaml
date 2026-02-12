@@ -28,10 +28,6 @@ spec:
       url: https://github.com/jharmison-redhat/rhoai-feast-demo
       ref: main
   services:
-    ui:
-      envFrom:
-        - secretRef:
-            name: postgres-secret
     offlineStore:
       persistence:
         file:
