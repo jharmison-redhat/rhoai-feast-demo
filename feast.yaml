@@ -37,7 +37,10 @@ spec:
       persistence:
         file:
           type: duckdb
-      server: {}
+      server:
+        envFrom:
+          - secretRef:
+              name: postgres-secret
     onlineStore:
       persistence:
         store:
