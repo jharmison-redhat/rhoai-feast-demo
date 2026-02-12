@@ -6,12 +6,12 @@ stringData:
   postgres: |
     host: postgres
     port: 5432
-    database: ${POSTGRES_DB}
+    database: ${POSTGRESQL_DATABASE}
     db_schema: feast
-    user: ${POSTGRES_USER}
-    password: ${POSTGRES_PASSWORD}
+    user: ${POSTGRESQL_USER}
+    password: ${POSTGRESQL_PASSWORD}
   sql: |
-    path: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+    path: postgresql+psycopg://${POSTGRESQL_USER}:${POSTGRESQL_PASSWORD}@postgres:5432/${POSTGRESQL_DATABASE}
     cache_ttl_seconds: 60
     sqlalchemy_config_kwargs:
       echo: false
