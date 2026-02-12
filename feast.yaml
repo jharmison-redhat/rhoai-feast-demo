@@ -21,7 +21,6 @@ apiVersion: feast.dev/v1alpha1
 kind: FeatureStore
 metadata:
   name: example
-  namespace: feature-management
 spec:
   feastProject: credit_scoring_local
   feastProjectDir:
@@ -62,7 +61,6 @@ spec:
             secretRef:
               name: feast-data-stores
         server:
-          logLevel: debug
           restAPI: true
           envFrom:
             - secretRef:
