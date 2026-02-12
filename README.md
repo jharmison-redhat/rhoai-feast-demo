@@ -20,7 +20,11 @@ This tutorial demonstrates the use of Feast as part of a real-time credit scorin
 ## Starting the demo
 
 1. In your Jupyter environment, clone this repository
-1. In the subfolder for the repository, open `00-deploy.ipynb`
+   1. Press the **Git Clone** button at the top of the navigation bar to the left:
+      ![git-clone-button.png](assets/git-clone-button.png)
+   1. Paste the address to this repository in the text box before selecting **Clone**:
+      ![git-repo-entry.png](assets/git-repo-entry.png)
+1. Navigate to the directory for the repository, open `00-deploy.ipynb`
 1. Follow the instructions there, step by step, to:
    1. Deploy Feast
    1. Configure features
