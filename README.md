@@ -7,8 +7,8 @@ This tutorial is built from the original **[feast-credit-scoring-tutorial](https
 This tutorial demonstrates the use of Feast as part of a real-time credit scoring application inside OpenShift AI.
 
 - The primary training dataset is a loan table. This table contains historic loan data with accompanying features. The dataset also contains a target variable, namely whether a user has defaulted on their loan.
-- Feast is used during training to enrich the loan table with zipcode and credit history features from the **data** folder.
-- Feast is also used to serve the latest zipcode and credit history features for online credit scoring using Redis.
+- Feast is used during training to enrich the loan table with zipcode and credit history features from the **data** folder inside **feature_repo**.
+- Feast is also used to serve the latest zipcode and credit history features for online credit scoring using PostgreSQL.
 
 ## Requirements
 
