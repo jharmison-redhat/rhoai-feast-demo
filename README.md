@@ -12,7 +12,17 @@ This tutorial demonstrates the use of Feast as part of a real-time credit scorin
 
 ## Requirements
 
-- Python 3.12
-- Registry: PostgreSQL
-- Offline Storage: duckdb
-- Online Storage: PostgreSQL
+- OpenShift AI 3.2 or newer
+- Your own Data Science Project for testing
+- Any Python 3.11 (not 3.12) based notebook (tested with `Jupyter | Data Science | CPU` version `2025.1` for Python 3.11)
+- Either Feast Operator already set to `Managed` in your `DataScienceCluster`, or enough permission to update it to be
+
+## Starting the demo
+
+1. In your Jupyter environment, clone this repository
+1. In the subfolder for the repository, open `00-deploy.ipynb`
+1. Follow the instructions there, step by step, to:
+   1. Deploy Feast
+   1. Configure features
+   1. Train a model using historical features
+   1. Perform inference with online features
